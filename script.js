@@ -26,6 +26,7 @@ function contar(){
 	var duration = 60 * tempo;//estipulando que a cada 5 segundos 
 	var display = document.querySelector('#timer');
 	startTimer(duration, display);
+	document.getElementById('tempo').value="";
 }
 function Atualizar(){
 	location.reload();
@@ -38,6 +39,7 @@ function valida(){
 		//alert("insira o tempo"+valor);
 		return false;
 	}else{
+
 		contar();
 	}
 }
